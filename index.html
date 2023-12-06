@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <div id="buttons-container">
+        <button onclick = "userMove='rock';
+        console.log(userMove);generateComputerMove();evaluateMoves();
+        console.log(`userMove${userMove} computerMove${computerMove} result: ${result}`)">
+            <img id="rock.png" src="/images/images/rock.png" alt="rock">
+        </button>
+        <button onclick = "userMove='paper';
+        console.log(userMove);generateComputerMove();evaluateMoves();
+        console.log(`userMove: ${userMove} computerMove: ${computerMove} result: ${result}`)">
+            <img id="paper.png" src="/images/images/paper.png" alt="paper">
+        </button>
+        <button
+        onclick = "userMove='scissors';
+        console.log(userMove);generateComputerMove();evaluateMoves();
+        console.log(`userMove: ${userMove} computerMove: ${computerMove} result: ${result}`)">
+            <img id="scissors.png" src="/images/images/scissors.png" alt="scissors">
+        </button>
+        <button>
+            <img id="reset-img" src="/images/images/reset.jpg" alt="reset">
+        </button>
+    </div>
+    
+    <div id="game-summary">
+        <h1>Game Summary</h1>
+        <table>
+            <tr>
+                <th>Rounds </th>
+                <th>Win </th>
+                <th>Loses </th>
+                <th>Tie </th>
+                <th>Games Played </th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <h1>Game History</h1>
+    <table>
+        <tr>
+            <th>User_move </th>
+            <th>Computer_move </th>
+            <th>Result </th>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
